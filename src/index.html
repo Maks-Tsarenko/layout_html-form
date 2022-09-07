@@ -12,7 +12,9 @@
   </head>
   <body>
     <div>
-      <form action="http://localhost:8080/api" method="post">
+      <form
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method="post">
         <div class="forms">
           <span class="persnInfo headlines">Personal information</span>
           <lable class="form-field">
@@ -54,7 +56,7 @@
 
           <lable class="form-field">
             I accept the term of the agreement
-            <input type="checkbox">
+            <input type="checkbox" required>
           </lable>
         </div>
 
@@ -152,10 +154,11 @@
             </select>
           </lable>
         </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
 
-    <button type="submit">Submit</button>
+
 
     <script type="text/javascript" src="./main.js"></script>
   </body>
