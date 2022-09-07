@@ -12,6 +12,35 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <div class="forms">
+      <form action="http://localhost:8080/api" method="post">
+        <div class="form-field">
+          Surname:
+          <input type="text" name="Surname">
+        </div>
+        <div class="form-field">
+          Name:
+          <input type="text" name="Name">
+        </div>
+        <div class="form-field">
+          How old are you?
+          <input
+            type="text" name="age"
+            value="12"
+          >
+        </div>
+        <div class="form-field">
+          Full date of birth:
+          <input type="text" name="Birthday date">
+        </div>
+        <div class="form-field">
+          I accept the term of the agreement
+          <input type="checkbox">
+        </div>
+
+
+      </form>
+    </div>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
