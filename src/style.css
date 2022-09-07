@@ -11,3 +11,27 @@
 button {
   margin: 0 8px;
 }
+
+/* .persnInfo {
+  position: relative;
+  left: 12px;
+  bottom: 12px;
+  background-color: white;
+  padding: 4px;
+}
+
+.registration {
+  position: relative;
+  left: 12px;
+  bottom: 12px;
+  background-color: white;
+  padding: 4px;
+} */
+
+.headlines {
+  position: relative;
+  left: 12px;
+  bottom: 12px;
+  background-color: white;
+  padding: 4px;
+}
