@@ -1,6 +1,13 @@
 .forms {
   border: 1px solid black;
+  margin: 20px 8px;
 }
+
 .form-field {
-  margin: 8px;
+  padding: 10px;
+  display: block;
+}
+
+button {
+  margin: 0 8px;
 }

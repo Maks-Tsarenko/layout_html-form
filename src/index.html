@@ -12,35 +12,149 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-    <div class="forms">
+    <div>
       <form action="http://localhost:8080/api" method="post">
-        <div class="form-field">
-          Surname:
-          <input type="text" name="Surname">
-        </div>
-        <div class="form-field">
-          Name:
-          <input type="text" name="Name">
-        </div>
-        <div class="form-field">
-          How old are you?
-          <input
-            type="text" name="age"
-            value="12"
-          >
-        </div>
-        <div class="form-field">
-          Full date of birth:
-          <input type="text" name="Birthday date">
-        </div>
-        <div class="form-field">
-          I accept the term of the agreement
-          <input type="checkbox">
+        <div class="forms">
+          <lable class="form-field">
+            Surname:
+            <input
+              type="text"
+              autocomplete="off"
+              name="Surname"
+            >
+          </lable>
+
+          <lable class="form-field">
+            Name:
+            <input
+              type="text"
+              name="Name"
+              autocomplete="off"
+            >
+          </lable>
+
+          <lable class="form-field">
+            How old are you?
+            <input
+              type="number" name="age"
+              value="12"
+              min="1"
+              max="100"
+            >
+          </lable>
+
+          <lable class="form-field">
+            Full date of birth:
+            <input
+              type="date"
+              name="Birthday date"
+              placeholder="mm/dd/yyyy"
+            >
+          </lable>
+
+          <lable class="form-field">
+            I accept the term of the agreement
+            <input type="checkbox">
+          </lable>
         </div>
 
+        <div class="forms">
+          <lable class="form-field">
+            E-mail:
+            <input
+              type="email"
+              name="Email"
+              placeholder="email@example.com"
+              required
+            >
+          </lable>
 
+          <lable class="form-field">
+            Password:
+            <input
+              type="password"
+              name="Password"
+              minlength="5"
+              maxlength="32"
+              required
+            >
+          </lable>
+        </div>
+
+        <div class="forms">
+          <div class="form-field">
+            Do you love cats?
+            <label>
+              <input
+                type="radio"
+                name="love cats"
+                value="yes"
+              >
+              Yes
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="love cats"
+                value="no"
+              >
+              No
+            </label>
+          </div>
+
+          <lable class="form-field">
+            What is your favorite color?
+            <input type="color" name="color">
+          </lable>
+
+          <lable class="form-field">
+            What time do you go to bed?
+            <input type="time" name="time to sleep">
+          </lable>
+
+          <lable class="form-field">
+            What are your favorite brand of car?
+            <select name="car" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </lable>
+
+          <lable class="form-field">
+            How do you rate our work?
+            <input
+              type="range"
+              name="rate our work"
+              value="0"
+              >
+          </lable>
+        </div>
+
+        <div class="forms">
+
+          <lable class="form-field">
+            Comments:
+            <textarea
+              name="comments"
+              cols="20"
+              rows="2"
+           ></textarea>
+          </lable>
+
+          <lable class="form-field">
+            Would you recommend us?
+            <select name="recommend us" >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </lable>
+        </div>
       </form>
     </div>
+
+    <button type="submit">Submit</button>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
