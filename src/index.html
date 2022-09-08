@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div>
+    <div class="main-form">
       <form
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post">
-        <div class="forms">
-          <span class="persnInfo headlines">Personal information</span>
+        method="post"
+      >
+        <fieldset class="forms">
+          <legend class="persnInfo headlines">Personal information</legend>
           <lable class="form-field">
             Surname:
             <input
@@ -36,7 +37,7 @@
           </lable>
 
           <lable class="form-field">
-            How old are you?
+            How old are You?
             <input
               type="number" name="age"
               value="12"
@@ -54,14 +55,14 @@
             >
           </lable>
 
-          <lable class="form-field">
+          <lable class="form-field lst_str" >
             I accept the term of the agreement
             <input type="checkbox" required>
           </lable>
-        </div>
+        </fieldset>
 
-        <div class="forms">
-          <span class="registration headlines" >Registrtation</span>
+        <fieldset class="forms">
+          <legend class="registration headlines" >Registrtation</legend>
           <lable class="form-field">
             E-mail:
             <input
@@ -72,7 +73,7 @@
             >
           </lable>
 
-          <lable class="form-field">
+          <lable class="form-field lst_str">
             Password:
             <input
               type="password"
@@ -82,10 +83,10 @@
               required
             >
           </lable>
-        </div>
+        </fieldset>
 
-        <div class="forms">
-          <span class="facts headlines">An interesting fact about you!</span>
+        <fieldset class="forms">
+          <legend class="facts headlines">An interesting fact about you!</legend>
           <div class="form-field">
             Do you love cats?
             <label>
@@ -125,7 +126,7 @@
             </select>
           </lable>
 
-          <lable class="form-field">
+          <lable class="form-field lst_str">
             How do you rate our work?
             <input
               type="range"
@@ -133,10 +134,10 @@
               value="0"
             >
           </lable>
-        </div>
+        </fieldset>
 
-        <div class="forms">
-          <span class="addInfo headlines">Additional info</span>
+        <fieldset class="forms">
+          <legend class="addInfo headlines">Additional info</legend>
           <lable class="form-field">
             Comments:
             <textarea
@@ -146,19 +147,17 @@
            ></textarea>
           </lable>
 
-          <lable class="form-field">
+          <lable class="form-field lst_str">
             Would you recommend us?
             <select name="recommend us" >
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
           </lable>
-        </div>
+        </fieldset>
         <button type="submit">Submit</button>
       </form>
     </div>
-
-
 
     <script type="text/javascript" src="./main.js"></script>
   </body>

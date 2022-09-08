@@ -1,37 +1,13 @@
+
 .forms {
-  border: 1px solid black;
-  margin: 20px 8px;
+  margin-bottom: 20px;
 }
 
 .form-field {
-  padding: 10px;
+  padding-bottom: 10px;
   display: block;
 }
 
-button {
-  margin: 0 8px;
-}
-
-/* .persnInfo {
-  position: relative;
-  left: 12px;
-  bottom: 12px;
-  background-color: white;
-  padding: 4px;
-}
-
-.registration {
-  position: relative;
-  left: 12px;
-  bottom: 12px;
-  background-color: white;
-  padding: 4px;
-} */
-
-.headlines {
-  position: relative;
-  left: 12px;
-  bottom: 12px;
-  background-color: white;
-  padding: 4px;
+.lst_str {
+  padding-bottom: 0;
 }
